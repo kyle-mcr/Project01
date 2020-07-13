@@ -25,6 +25,7 @@ textarea {
     width: 100%;
     font-size: 15px;
     line-height: 15px;
+    padding-bottom: 200px;
 }
 
 .sidebar {
@@ -35,4 +36,14 @@ textarea {
 
 .sidebar h2 {
     margin-top: 5px;
+}
+.title{
+  width: 100%;
+  font-size: 15px;
+  line-height: 15px;
+}
+#title{
+  width: 100%;
+  font-size: 15px;
+  line-height: 15px;
 }
