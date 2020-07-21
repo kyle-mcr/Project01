@@ -1,4 +1,5 @@
 import random
+import markdown2
 from random import choice
 from django.shortcuts import render
 from django import forms
@@ -49,7 +50,7 @@ def new(request):
         textarea = form.cleaned_data["textarea"]
         entries = util.list_entries()
         if title in entries:
-            return render(request, "404.html", {"msg": "This entry is already in use.", "form": SearchEntry()})
+            return render(request, "404.html", {"msg": "This entry is already exists", "form": SearchEntry()})
         else:
             util.save_entry(title, textarea)
             entry = markdowner.convert(util.get_entry(title))
